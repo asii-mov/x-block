@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>X-Block</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🚫 X-Block</h1>
+      <p>Block users from X (Twitter) lists</p>
+    </header>
+
+    <main>
+      <div class="section">
+        <label for="listUrls">Paste list URLs:</label>
+        <textarea 
+          id="listUrls" 
+          placeholder="Paste X/Twitter list URLs here...&#10;Examples:&#10;https://x.com/i/lists/123456789/members&#10;https://x.com/i/lists/987654321"
+          rows="4"
+        ></textarea>
+        <div class="actions">
+          <button id="processLists" class="btn-secondary">Process Lists</button>
+        </div>
+      </div>
+
+      <div class="section">
+        <label>Block Timing Controls:</label>
+        <div class="timing-controls">
+          <div class="timing-control">
+            <label for="minDelay">Minimum delay: <span id="minDelayValue">5</span>s</label>
+            <input type="range" id="minDelay" min="1" max="30" value="5" class="range-slider">
+          </div>
+          <div class="timing-control">
+            <label for="maxDelay">Maximum delay: <span id="maxDelayValue">20</span>s</label>
+            <input type="range" id="maxDelay" min="5" max="60" value="20" class="range-slider">
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="blockUsers" class="btn-primary">Block Users</button>
+        <button id="clearList" class="btn-secondary">Clear URLs</button>
+      </div>
+
+      <div class="status" id="status"></div>
+
+      <div class="section">
+        <details>
+          <summary>Blocked Users (<span id="blockedCount">0</span>)</summary>
+          <div id="blockedUsersList" class="blocked-users"></div>
+        </details>
+      </div>
+
+      <div class="section">
+        <div class="controls">
+          <label class="toggle">
+            <input type="checkbox" id="extensionEnabled" checked>
+            <span class="slider"></span>
+            Extension Enabled
+          </label>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="exportList" class="btn-secondary">Export List</button>
+        <button id="clearAll" class="btn-danger">Clear All</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

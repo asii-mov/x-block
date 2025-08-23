@@ -1,0 +1,9 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- White background circle for better visibility -->
+  <circle cx="16" cy="16" r="15" fill="white" stroke="#cccccc" stroke-width="1"/>
+  <!-- X Letter -->
+  <text x="16" y="20" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="18" fill="#000000">X</text>
+  <!-- Prohibited Circle -->
+  <circle cx="16" cy="16" r="14" fill="none" stroke="#ff0000" stroke-width="3"/>
+  <line x1="6" y1="6" x2="26" y2="26" stroke="#ff0000" stroke-width="3"/>
+</svg>
