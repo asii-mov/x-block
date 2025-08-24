@@ -2,6 +2,8 @@
 
 X-Block is a browser extension that helps you filter content on X (formerly Twitter) by blocking users from lists. It allows you to paste in X list URLs and automatically blocks everyone in that list, helping you avoid scammers and unwanted content.
 
+![X-Block Demo](demo.gif)
+
 ## Features
 
 - **Automated List Processing**: Paste X/Twitter list URLs and automatically fetch all members
