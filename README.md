@@ -122,6 +122,8 @@ To modify the extension:
 - **Background logs**: `chrome://extensions` → "Inspect views" → "background.js"
 - **Content logs**: Open DevTools on X.com page
 
+This app was barely tested, open an issue if you face an issue.
+
 ## Privacy
 
 - **Local Processing**: All data is processed locally in your browser
